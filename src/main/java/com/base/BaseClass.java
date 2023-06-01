@@ -18,10 +18,10 @@ public static WebDriver driver;
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		}
-		else if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
+		else if (System.getProperty("Browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
-		}else if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
+		}else if (System.getProperty("Browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver =new EdgeDriver();
 		}
